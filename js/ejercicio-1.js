@@ -15,11 +15,11 @@ function comprobarProbabilidad(input){ //Declaracion de la función, acepta un p
 $("#inputAzar").on("keyup",function(event){ //on("keyup") es un eventListener, cuando se levanta una tecla dentro del input ejecuta la funcion
     if (event.code === 'Enter') //comprueba si la tecla pulsada es enter, de serlo entra en el if
     {
-       comprobarProbabilidad($("#inputAzar").val()); //llamada a la funcion comprobarProbabilidad declarada al inicio, acepta un parametro que es el valor del input en ese momento
+       comprobarProbabilidad($("#inputAzar").val()); //llamada a la funcion comprobarProbabilidad declarada al inicio, acepta un parametro que es el valor del inputAzar en ese momento
     }
 });
 
-$("#botonAzar").on("click", function(){ //Al presionar el "botonAzar" llama a la funcion comprobarDisponibilidad, acepta como parámetro el valor del inputAzar en ese momento
+$("#botonAzar").on("click", function(){ //Al presionar el botón con id "botonAzar" llama a la funcion comprobarProbabilidad, acepta como parámetro el valor del inputAzar en ese momento
     comprobarProbabilidad($("#inputAzar").val())
 }
 )

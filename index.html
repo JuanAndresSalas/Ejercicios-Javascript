@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet/less" type="text/css" href="/css/index.less" />
-    <script src="/node_modules/less/dist/less.js" type="text/javascript"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet/less" type="text/css" href="/css/index.less" />
+  <script src="/node_modules/less/dist/less.js" type="text/javascript"></script>
 </head>
 <body>
+  <h1 >Ejercicios JavaScript</h1>
     
 
 <ul class="cards">
@@ -27,7 +28,7 @@
                 que esté en el rango antes indicado, o bien imprima en pantalla el mensaje “El número ingresado no es favorable” en caso contrario.</p>
             <div class="card__text" style="margin-top: 10px;">
                 <label  for="inputAzar" >Numero: </label>
-                <input  type="number" min="1" max="100" id="inputAzar" style="width: 80%; "></input>
+                <input class="card__text" type="number" min="1" max="100" id="inputAzar" style="width: 80%; "></input>
             </div>
           <button class="btn btn--block card__btn" id="botonAzar">Comprobar Posibilidades</button>
         </div>
@@ -40,11 +41,11 @@
           <div class="card__title">Ejercicio 2: Año Bisiesto </div>
           <p class="card__text">Un año es bisiesto en el calendario Gregoriano si es divisible entre 4 y no divisible entre 100, o bien, si es divisible entre 400.</p>
           <p class="card__text"><strong>Requerimiento:</strong> Desarrolla un algoritmo que reciba un número que represente a un año, e indique si corresponde a un año bisiesto o no. Debes validar que el valor ingresado sea un número menor o igual a cero; de no ser así, no se puede realizar operación adicional alguna.</p>
-          <div class="card__text" style="margin-top: 10px;">
+          <div class="card__text">
             <label  for="inputAño" >Año: </label>
-            <input  type="number" min="1" max="100" id="inputAño" style="width: 80%; "></input>
+            <input class="card__text"  type="number" id="inputAño" style="width: 80%; "></input>
         </div>
-          <button class="btn btn--block card__btn ">jhbh</button>
+          <button class="btn btn--block card__btn" id="botonAño">Comprobar Año</button>
         </div>
       </div>
     </li>
@@ -63,7 +64,15 @@
                     <li>el set todavía no termina, o el resultado es inválido (por ejemplo, 8-6 o 7-3)</li>
                 </ul>
             </p>
-          <button class="btn btn--block card__btn">Button</button>
+            <div class="card__text" style="margin-top: 10px;">
+              <label  for="inputA" >Jugador A: </label>
+              <input class="card__text" type="number"  id="inputA" style="width: 80%; "></input>
+          </div>
+          <div class="card__text" style="margin-top: 10px;">
+            <label  for="inputB" >Jugador B: </label>
+            <input class="card__text" type="number"  id="inputB" style="width: 80%; "></input>
+        </div>
+          <button class="btn btn--block card__btn" id="botonTenis">Mostrar Ganador</button>
         </div>
       </div>
     </li>
@@ -75,6 +84,7 @@
       
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/js/ejercicio-1.js"></script>
-    <script src="/js/cards.js"></script>
+    <script src="/js/ejercicio-2.js"></script>
+    <script src="/js/ejercicio-3-js"></script>
 </body>
 </html>

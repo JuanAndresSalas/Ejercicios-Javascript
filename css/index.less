@@ -26,6 +26,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
@@ -49,11 +52,11 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 3px 0px #2c2c2c;
-  -moz-box-shadow: 0px 3px 0px #2c2c2c;
-  -ms-box-shadow: 0px 3px 0px #2c2c2c;
-  -o-box-shadow: 0px 3px 0px #2c2c2c;
-  box-shadow: 0px 3px 0px #2c2c2c;
+  -webkit-box-shadow: 0px 3px 0px @gray-dark;
+  -moz-box-shadow: 0px 3px 0px @gray-dark;
+  -ms-box-shadow: 0px 3px 0px @gray-dark;
+  -o-box-shadow: 0px 3px 0px @gray-dark;
+  box-shadow: 0px 3px 0px @gray-dark;
   color: #222;
   text-shadow: 1px 1px 1px #fff;
   -webkit-transition: All 250ms ease;
@@ -85,6 +88,7 @@ input[type=number]::-webkit-outer-spin-button {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .cards__item {
@@ -174,5 +178,10 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 0.1rem;
+}
+
+h1{
+  display: flex;;
+  justify-content: center;
 }
 
