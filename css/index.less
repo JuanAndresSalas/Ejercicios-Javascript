@@ -34,13 +34,44 @@ img {
   vertical-align: middle;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  
+}
 .btn {
   background-color: white;
   border: 1px solid @gray-light;
-  //border-radius: 1rem;
+  border-radius: 1rem;
   color: @gray-dark;
   padding: 0.5rem;
-  text-transform: lowercase;
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 0px #2c2c2c;
+  -moz-box-shadow: 0px 3px 0px #2c2c2c;
+  -ms-box-shadow: 0px 3px 0px #2c2c2c;
+  -o-box-shadow: 0px 3px 0px #2c2c2c;
+  box-shadow: 0px 3px 0px #2c2c2c;
+  color: #222;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-transition: All 250ms ease;
+  -moz-transition: All 250ms ease;
+  -o-transition: All 250ms ease;
+  -ms-transition: All 250ms ease;
+  transition: All 250ms ease;
+  
+}
+
+.btn:active {
+  position: relative;
+  top: 5px;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  transition: All 250ms ease;
+  
 }
 
 .btn--block {
@@ -77,6 +108,9 @@ img {
   &:hover {
     .card__image {
       filter: contrast(100%);
+    }
+    .card__text{
+      color: @gray-darker;
     }
   }
 }
@@ -116,15 +150,15 @@ img {
 }
 
 .card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+  background-image: url(https://curiosfera-historia.com/wp-content/uploads/Historia-del-calendario.jpg);
 }
 
 .card__image--record {
-  background-image: url(https://unsplash.it/800/600?image=39);
+  background-image: url("https://www.14ymedio.com/juegos/Recientemente-sustanciales-legislacion-industria-Brasil_CYMIMA20220825_0005_13.jpg");
 }
 
 .card__image--fence {
-  background-image: url(https://unsplash.it/800/600?image=59);
+  background-image: url(https://static1.abc.es/media/bienestar/2019/08/02/tenis-abecedario-kgNF--620x349@abc.jpg);
 }
 
 .card__title {
@@ -139,6 +173,6 @@ img {
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.1rem;
 }
 

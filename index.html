@@ -14,11 +14,22 @@
 <ul class="cards">
     <li class="cards__item">
       <div class="card">
-        <div class="card__image card__image--fence"></div>
+        <div class="card__image card__image--record"></div>
         <div class="card__content">
-          <div class="card__title">Flex</div>
-          <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-          <button class="btn btn--block card__btn">Button</button>
+            <div class="card__title">Ejercicio 1: Juego de Azar</div>
+            <p class="card__text">En un conocido juego de azar con opciones pertenecientes al conjunto de los números
+                mayores a 1 y menores o iguales a 100, existen números que tienen más probabilidad de
+                ganar. Esto aplica cuando un número es menor a 15 y mayor a 5, o bien si el número es el 70 o el 55.
+                </p>
+            <p class="card__text"><strong>Requerimiento:</strong>
+                Realiza un algoritmo y pieza de código en JavaScript tal que, ingresado un número,
+                imprima en pantalla el mensaje “El número ingresado tiene opciones de ganar” en caso de
+                que esté en el rango antes indicado, o bien imprima en pantalla el mensaje “El número ingresado no es favorable” en caso contrario.</p>
+            <div class="card__text" style="margin-top: 10px;">
+                <label  for="inputAzar" >Numero: </label>
+                <input  type="number" min="1" max="100" id="inputAzar" style="width: 80%; "></input>
+            </div>
+          <button class="btn btn--block card__btn" id="botonAzar">Comprobar Posibilidades</button>
         </div>
       </div>
     </li>
@@ -26,18 +37,24 @@
       <div class="card">
         <div class="card__image card__image--river"></div>
         <div class="card__content">
-          <div class="card__title">Flex Grow</div>
-          <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-          <button class="btn btn--block card__btn">Button</button>
+          <div class="card__title">Ejercicio 2: Año Bisiesto </div>
+          <p class="card__text">Un año es bisiesto en el calendario Gregoriano si es divisible entre 4 y no divisible entre 100, o bien, si es divisible entre 400.</p>
+          <p class="card__text"><strong>Requerimiento:</strong> Desarrolla un algoritmo que reciba un número que represente a un año, e indique si corresponde a un año bisiesto o no. Debes validar que el valor ingresado sea un número menor o igual a cero; de no ser así, no se puede realizar operación adicional alguna.</p>
+          <div class="card__text" style="margin-top: 10px;">
+            <label  for="inputAño" >Año: </label>
+            <input  type="number" min="1" max="100" id="inputAño" style="width: 80%; "></input>
+        </div>
+          <button class="btn btn--block card__btn ">jhbh</button>
         </div>
       </div>
     </li>
     <li class="cards__item">
       <div class="card">
-        <div class="card__image card__image--record"></div>
+        <div class="card__image  card__image--fence "></div>
         <div class="card__content">
-          <div class="card__title">Flex Shrink</div>
-          <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
+          <div class="card__title">Ejercicio 3: Tenis </div>
+          <p class="card__text">Un periodista debe relatar un partido de tenis, pero no conoce las reglas del deporte. En particular, no ha logrado aprender cómo saber si un set ya terminó, y quién lo ganó.</p>
+          <p class="card__text"><strong>Requerimiento:</strong>Un partido de tenis se divide en sets. Para ganar un set, un jugador debe ganar 6 juegos, pero además debe haber ganado por lo menos dos juegos más que su rival. Si el set está empatado a 5 juegos, el ganador es el primero que llegue a 7. Si el set está empatado a 6 juegos, el set se define en un último juego, en cuyo caso el resultado final es 7-6.</p>
           <button class="btn btn--block card__btn">Button</button>
         </div>
       </div>
@@ -49,6 +66,7 @@
       
       
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js/ejercicio-1.js"></script>
     <script src="/js/cards.js"></script>
 </body>
 </html>
