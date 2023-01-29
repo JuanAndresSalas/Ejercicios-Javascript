@@ -8,6 +8,8 @@ function resultadoTenis(A, B) { //Declaración de funcion resultadoTenis(), acep
         alert("B ganó el set")
     }else if(A >= 7 && B <= 5 || B >= 7 && A <= 5 ){ // Condicionales para resultados imposibles
         alert("Resultado inválido")
+    }else{
+        alert("Resultado inválido")
     }
 }
 
