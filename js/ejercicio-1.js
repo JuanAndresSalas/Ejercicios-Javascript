@@ -1,7 +1,7 @@
 
 function comprobarProbabilidad(input){ //Declaracion de la función, acepta un parametro, dentro de la funcion se hace las comprobaciones correspondientes
     if (input % 1 == 0 && input >= 1 && input <= 100) { //Comprobación que el numero ingresado sea entero y esté entre 1 y 100
-        if(input == 70 || input  == 50 || input >=5  && input <= 15 ){ //comprobación de números con probabilidades de ganar
+        if(input == 70 || input  == 55 || input >=5  && input <= 15 ){ //comprobación de números con probabilidades de ganar
             alert("El número ingresado tiene opciones de ganar")
         }else{
             alert("El número ingresado no es favorable")
